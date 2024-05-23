@@ -15,6 +15,7 @@ button {
   --color-background: white;
   --element-light: #dadbf1;
   --element-dark: #4c5fd5;
+  --mobile-resolution: 600px;
 }
 
 body {
@@ -26,10 +27,12 @@ body {
   margin: auto;
 }
 
+/* ----- Header section ----- */
 .header-container {
   background-color: var(--color-header);
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 6px;
   padding: 2rem;
   padding-right: 3rem;
@@ -56,6 +59,7 @@ body {
   padding: 0rem 2rem;
 }
 
+/* ----- Demo section ----- */
 .demo {
   background-color: var(--element-light);
   height: 450px;
@@ -145,14 +149,121 @@ body {
   color: var(--element-light);
 }
 
+/*----- App features section ----- */
+.apps-features {
+  margin-bottom: 4rem;
+  background-color: var(--element-light);
+}
+
+.apps-features-header {
+  text-align: center;
+  font-size: 250%;
+  margin-bottom: 1rem;
+}
+
+.apps-features-line {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.apps-features-list {
+  display: flex;
+  /* display: inline; */
+  gap: 10px;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.apps-features-item {
+  text-align: center;
+}
+
+.apps-features-item p {
+  margin: auto;
+  line-height: 1;
+  margin-top: 1.5rem;
+  font-size: 90%;
+  width: 30ch;
+}
+
+.apps-features-item img {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* ----- Why our app section ----- */
+.why-our-app h2 {
+  text-align: center;
+  margin: auto;
+  font-size: 250%;
+  margin-bottom: 5rem;
+}
+
+.why-our-app {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.why-our-app-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, max-content));
+  justify-content: center;
+  margin-top: -1.5rem;
+}
+
+.why-our-app-item {
+  text-align: center;
+  max-width: 200px;
+  padding: 1rem;
+}
+
+.why-our-app-item p {
+  margin-top: 1rem;
+  line-height: 0.95;
+  font-size: 90%;
+}
+
+.why-our-app-item img {
+  width: 75%;
+  border-radius: 50%;
+}
+
+/* ---- Responsiveness ---- */
+@media (max-width: 700px) {
+  .demo {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    gap: 1rem;
+  }
+  .apps-features {
+    margin-top: 4rem;
+    position: relative;
+  }
+
+  .header-container {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 600px) {
+  .apps-features-list {
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+}/* ---- Responsiveness ---- */
 
 /* Trusted by companies section */
+
 .companies{
   max-width: 1200px;
   margin-inline: auto;
   background-color: var(--element-dark);
-  color: var(--color-background);
-  
+  color: var(--color-background);  
 }
 .companies h3 {
   text-align:center;
@@ -162,8 +273,6 @@ body {
   display:grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   padding:2rem;
-  
-
 }
 .gallery-item img {
   width: 100%;
@@ -172,7 +281,6 @@ body {
   object-fit: cover;
   padding:0.3rem
 }
-
 /* Trusted by companies section */
 
 /*----- Footer section ----- */
@@ -267,3 +375,4 @@ footer nav ul li {
 .social-button {
   width: 40px;
 }
+
