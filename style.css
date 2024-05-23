@@ -241,7 +241,7 @@ body {
 }
 
 /* ---- Responsiveness ---- */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .demo {
     flex-direction: column;
     text-align: center;
@@ -275,7 +275,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .apps-features-list {
     flex-direction: column;
     text-align: center;
