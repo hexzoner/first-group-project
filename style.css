@@ -19,11 +19,11 @@
   padding: 0.8rem;
 }
 
-section {
+.options {
   padding: 2rem;
 }
 
-section h2 {
+.options h2 {
   margin-bottom: 1rem;
   text-align: center;
   padding: 1rem;
@@ -94,11 +94,4 @@ footer nav ul li {
 
 .social-button {
   width: 40px;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
