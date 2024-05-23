@@ -15,6 +15,7 @@ button {
   --color-background: white;
   --element-light: #dadbf1;
   --element-dark: #4c5fd5;
+  --mobile-resolution: 600px;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
   background-color: var(--color-header);
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 6px;
   padding: 2rem;
   padding-right: 3rem;
@@ -166,9 +168,9 @@ body {
 
 .apps-features-list {
   display: flex;
+  /* display: inline; */
   gap: 10px;
   justify-content: center;
-  /* align-items: center; */
   padding-top: 2rem;
   padding-bottom: 6rem;
 }
@@ -178,6 +180,7 @@ body {
 }
 
 .apps-features-item p {
+  margin: auto;
   line-height: 1;
   margin-top: 1.5rem;
   font-size: 90%;
@@ -224,4 +227,32 @@ body {
 .why-our-app-item img {
   width: 75%;
   border-radius: 50%;
+}
+
+/* ---- Responsiveness ---- */
+@media (max-width: 700px) {
+  .demo {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    gap: 1rem;
+  }
+  .apps-features {
+    margin-top: 4rem;
+    position: relative;
+  }
+
+  .header-container {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 600px) {
+  .apps-features-list {
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
 }
