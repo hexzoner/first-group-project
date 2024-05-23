@@ -174,3 +174,96 @@ body {
 }
 
 /* Trusted by companies section */
+
+/*----- Footer section ----- */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #E5E5E5;
+}
+
+.container p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 0.8rem;
+}
+
+.options {
+  padding: 2rem;
+}
+
+.options h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.our-offers {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.offer {
+  background: #4C5FD5;
+  padding: 1rem;
+  text-align: center;
+  width: 300px;
+}
+
+.offer h3 {
+  margin-top: 0.5rem;
+  color: white;
+}
+
+.offer p {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.offer .button {
+  padding: 0.5rem 1rem;
+  text-decoration: underline;
+  color: white;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+footer nav ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+footer nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+}
+
+footer nav ul li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.social-media {
+  margin-bottom: 1rem;
+}
+
+.social-media .social-button {
+  display: inline-block;
+  margin: 0 0.6rem;
+}
+
+.social-button {
+  width: 40px;
+}
