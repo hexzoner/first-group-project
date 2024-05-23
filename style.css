@@ -26,6 +26,7 @@ body {
   margin: auto;
 }
 
+/* ----- Header section ----- */
 .header-container {
   background-color: var(--color-header);
   display: flex;
@@ -56,6 +57,7 @@ body {
   padding: 0rem 2rem;
 }
 
+/* ----- Demo section ----- */
 .demo {
   background-color: var(--element-light);
   height: 450px;
@@ -145,6 +147,49 @@ body {
   color: var(--element-light);
 }
 
+/*----- App features section ----- */
+.apps-features {
+  margin-bottom: 4rem;
+  background-color: var(--element-light);
+}
+
+.apps-features-header {
+  text-align: center;
+  font-size: 250%;
+  margin-bottom: 1rem;
+}
+
+.apps-features-line {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.apps-features-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.apps-features-item {
+  text-align: center;
+}
+
+.apps-features-item p {
+  line-height: 1;
+  margin-top: 1.5rem;
+  font-size: 90%;
+  width: 30ch;
+}
+
+.apps-features-item img {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* ----- Why our app section ----- */
 .why-our-app h2 {
   text-align: center;
   margin: auto;
