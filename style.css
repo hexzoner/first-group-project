@@ -187,7 +187,7 @@ body {
 
 .apps-features-item p {
   margin: auto;
-  line-height: 1.25;
+  line-height:gitgt 1.25;
   /* font-weight: 500; */
   margin-top: 1.5rem;
   font-size: 95%;
@@ -312,7 +312,7 @@ body {
 .video iframe {
   display:block;
   margin:auto;
-  
+  width:560; height:315;
   -webkit-box-shadow: 9px 5px 15px 5px #000000; 
 box-shadow: 9px 5px 15px 5px #000000;
 }
