@@ -144,3 +144,33 @@ body {
   cursor: pointer;
   color: var(--element-light);
 }
+
+
+/* Trusted by companies section */
+.companies{
+  max-width: 1200px;
+  margin-inline: auto;
+  background-color: var(--element-dark);
+  color: var(--color-background);
+  
+}
+.companies h3 {
+  text-align:center;
+  padding-top:2rem;
+}
+.companies .gallery {
+  display:grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  padding:2rem;
+  
+
+}
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 1;
+  display: block;
+  object-fit: cover;
+  padding:0.3rem
+}
+
+/* Trusted by companies section */
