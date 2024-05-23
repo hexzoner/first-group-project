@@ -44,6 +44,10 @@ body {
   cursor: pointer;
 }
 
+.header-item:hover {
+  background-color: rgb(58, 58, 58);
+}
+
 .header-item:first-child {
   margin-right: auto;
 }
@@ -104,6 +108,7 @@ body {
 }
 
 .demo .demo-item-1 p:nth-child(4):hover {
+  color: var(--element-light);
   cursor: pointer;
 }
 
@@ -137,4 +142,5 @@ body {
 
 .demo .demo-item-2 p:nth-child(3):hover {
   cursor: pointer;
+  color: var(--element-light);
 }
