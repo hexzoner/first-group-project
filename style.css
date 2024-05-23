@@ -294,6 +294,30 @@ body {
 }
 /* Trusted by companies section */
 
+/* v Video section v */
+.video {
+  max-width: 1200px;
+  margin-inline: auto;
+  background-color: var(--element-light);
+  color: var(--element-dark);
+  padding-bottom:3rem;
+}
+
+.video h1 {
+  text-align:center;
+  padding:2rem;
+  text-shadow:  1px 0 7px;
+}
+
+.video iframe {
+  display:block;
+  margin:auto;
+  
+  -webkit-box-shadow: 9px 5px 15px 5px #000000; 
+box-shadow: 9px 5px 15px 5px #000000;
+}
+/* ^ Video section ^ */
+
 /*----- Footer section ----- */
 .container {
   width: 100%;
