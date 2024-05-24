@@ -187,7 +187,7 @@ body {
 
 .apps-features-item p {
   margin: auto;
-  line-height:gitgt 1.25;
+  line-height: gitgt 1.25;
   /* font-weight: 500; */
   margin-top: 1.5rem;
   font-size: 95%;
@@ -241,26 +241,51 @@ body {
 }
 
 /* ---- Responsiveness ---- */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .demo {
-    /* flex-direction: column; */
-    flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;
-    margin: auto;
     align-items: center;
-    gap: 1rem;
+    height: fit-content;
+    gap: 1.5rem;
   }
+
+  .demo-item-2 {
+    align-self: center;
+    max-width: fit-content;
+    right: 0;
+  }
+
+  .demo-item-2 h3 {
+    padding-top: 2rem;
+  }
+
+  .demo .demo-item-1 p:nth-child(1),
+  .demo .demo-item-1 p:nth-child(4),
+  .demo .demo-item-1 p:nth-child(3) {
+    bottom: 0;
+    left: 0;
+  }
+
   .apps-features {
-    margin-top: 4rem;
     position: relative;
   }
 
   .header-container {
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .header-item {
+    height: 3.5rem;
+    width: 9rem;
+  }
+
+  .header-item:first-child {
+    margin-right: 0px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .apps-features-list {
     flex-direction: column;
     text-align: center;
@@ -308,21 +333,22 @@ body {
   margin-inline: auto;
   background-color: var(--element-light);
   color: var(--element-dark);
-  padding-bottom:3rem;
+  padding-bottom: 3rem;
 }
 
 .video h1 {
-  text-align:center;
-  padding:2rem;
-  text-shadow:  1px 0 7px;
+  text-align: center;
+  padding: 2rem;
+  text-shadow: 1px 0 7px;
 }
 
 .video iframe {
-  display:block;
-  margin:auto;
-  width:560; height:315;
-  -webkit-box-shadow: 9px 5px 15px 5px #000000; 
-box-shadow: 9px 5px 15px 5px #000000;
+  display: block;
+  margin: auto;
+  width: 560;
+  height: 315;
+  -webkit-box-shadow: 9px 5px 15px 5px #000000;
+  box-shadow: 9px 5px 15px 5px #000000;
 }
 
 .video iframe:hover {
@@ -336,8 +362,8 @@ box-shadow: 9px 5px 15px 5px #000000;
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto; 
-  background: #DADBF1;
+  margin: 0 auto;
+  background: #dadbf1;
 }
 
 .container p {
