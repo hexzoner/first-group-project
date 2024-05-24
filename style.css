@@ -87,6 +87,13 @@ body {
 .demo-item-1 {
   justify-content: space-between;
   max-width: 400px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: var(--color-header);
+  background-image: url(https://picsum.photos/id/223/600);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
 }
 
 /* #1 Editors Coice app */
@@ -128,6 +135,13 @@ body {
   border-radius: 1.5rem;
   position: relative;
   right: 5%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: var(--color-header);
+  background-image: url(https://picsum.photos/id/171/600);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
 }
 
 .demo-item-2 h3 {
@@ -157,7 +171,7 @@ body {
 .apps-features {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: rgb(234, 234, 255);
+  background-color: var(--element-light);
 
   color: black;
 }
@@ -197,6 +211,9 @@ body {
 .apps-features-item img {
   width: 40%;
   border-radius: 50%;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: var(--color-header);
 }
 
 /* ----- Why our app section ----- */
@@ -238,6 +255,9 @@ body {
 .why-our-app-item img {
   width: 75%;
   border-radius: 50%;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: var(--color-header);
 }
 
 /* ---- Responsiveness ---- */
@@ -322,8 +342,8 @@ body {
   transform: scale(1.3);
   border-style: ridge;
   border-width: 5px;
-  border-color:#dadbf1;
-  padding:0rem;
+  border-color: #dadbf1;
+  padding: 0rem;
 }
 /* Trusted by companies section */
 
@@ -352,9 +372,7 @@ body {
 }
 
 .video iframe:hover {
-  
-    transform: scale(1.4);
-  
+  transform: scale(1.4);
 }
 /* ^ Video section ^ */
 
@@ -375,7 +393,7 @@ body {
 
 .options {
   padding: 2rem;
-  background: #DADBF1;
+  background: #dadbf1;
 }
 
 .options h2 {
