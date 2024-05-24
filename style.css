@@ -19,12 +19,16 @@ button {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
-    sans-serif;
-
   max-width: 1200px;
   margin: auto;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+  letter-spacing: -0.5px;
 }
 
 /* ----- Header section ----- */
@@ -151,8 +155,11 @@ body {
 
 /*----- App features section ----- */
 .apps-features {
-  margin-bottom: 4rem;
-  background-color: var(--element-light);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgb(234, 234, 255);
+
+  color: black;
 }
 
 .apps-features-header {
@@ -168,7 +175,6 @@ body {
 
 .apps-features-list {
   display: flex;
-  /* display: inline; */
   gap: 10px;
   justify-content: center;
   padding-top: 2rem;
@@ -181,9 +187,10 @@ body {
 
 .apps-features-item p {
   margin: auto;
-  line-height: 1;
+  line-height: gitgt 1.25;
+  /* font-weight: 500; */
   margin-top: 1.5rem;
-  font-size: 90%;
+  font-size: 95%;
   width: 30ch;
 }
 
@@ -198,11 +205,14 @@ body {
   margin: auto;
   font-size: 250%;
   margin-bottom: 5rem;
+  text-shadow: 1.5px 1px 1px black;
 }
 
 .why-our-app {
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background-color: var(--element-dark);
+  color: white;
 }
 
 .why-our-app-list {
@@ -220,8 +230,9 @@ body {
 
 .why-our-app-item p {
   margin-top: 1rem;
-  line-height: 0.95;
+  line-height: 1.25;
   font-size: 90%;
+  text-shadow: 1px 1px 1px black;
 }
 
 .why-our-app-item img {
@@ -230,64 +241,129 @@ body {
 }
 
 /* ---- Responsiveness ---- */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .demo {
-    /* flex-direction: column; */
-    flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;
-    margin: auto;
     align-items: center;
-    gap: 1rem;
+    height: fit-content;
+    gap: 1.5rem;
   }
+
+  .demo-item-2 {
+    align-self: center;
+    max-width: fit-content;
+    right: 0;
+  }
+
+  .demo-item-2 h3 {
+    padding-top: 2rem;
+  }
+
+  .demo .demo-item-1 p:nth-child(1),
+  .demo .demo-item-1 p:nth-child(4),
+  .demo .demo-item-1 p:nth-child(3) {
+    bottom: 0;
+    left: 0;
+  }
+
   .apps-features {
-    margin-top: 4rem;
     position: relative;
   }
 
   .header-container {
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .header-item {
+    height: 3.5rem;
+    width: 9rem;
+  }
+
+  .header-item:first-child {
+    margin-right: 0px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .apps-features-list {
     flex-direction: column;
     text-align: center;
     margin: auto;
   }
-}/* ---- Responsiveness ---- */
+} /* ---- Responsiveness ---- */
 
 /* Trusted by companies section */
 
-.companies{
+.companies {
   max-width: 1200px;
   margin-inline: auto;
   background-color: var(--element-dark);
-  color: var(--color-background);  
+  color: var(--color-background);
 }
 .companies h3 {
-  text-align:center;
-  padding-top:2rem;
+  text-align: center;
+  padding-top: 2rem;
 }
 .companies .gallery {
-  display:grid;
+  display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  padding:2rem;
+  padding: 2rem;
 }
 .gallery-item img {
   width: 100%;
   aspect-ratio: 1;
   display: block;
   object-fit: cover;
-  padding:0.3rem
+  padding: 0.3rem;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.3);
+  border-style: ridge;
+  border-width: 5px;
+  border-color:#dadbf1;
+  padding:0rem;
 }
 /* Trusted by companies section */
+
+/* v Video section v */
+.video {
+  max-width: 1200px;
+  margin-inline: auto;
+  background-color: var(--element-light);
+  color: var(--element-dark);
+  padding-bottom: 3rem;
+}
+
+.video h1 {
+  text-align: center;
+  padding: 2rem;
+  text-shadow: 1px 0 7px;
+}
+
+.video iframe {
+  display: block;
+  margin: auto;
+  width: 560;
+  height: 315;
+  -webkit-box-shadow: 9px 5px 15px 5px #000000;
+  box-shadow: 9px 5px 15px 5px #000000;
+}
+
+.video iframe:hover {
+  
+    transform: scale(1.4);
+  
+}
+/* ^ Video section ^ */
 
 /*----- Footer section ----- */
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  background: #dadbf1;
 }
 
 .container p {
@@ -316,7 +392,7 @@ body {
 }
 
 .offer {
-  background: #4C5FD5;
+  background: #4c5fd5;
   padding: 1rem;
   text-align: center;
   width: 300px;
