@@ -211,6 +211,9 @@ body {
 .apps-features-item img {
   width: 40%;
   border-radius: 50%;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: var(--color-header);
 }
 
 /* ----- Why our app section ----- */
@@ -252,6 +255,9 @@ body {
 .why-our-app-item img {
   width: 75%;
   border-radius: 50%;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: var(--color-header);
 }
 
 /* ---- Responsiveness ---- */
