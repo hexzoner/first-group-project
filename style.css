@@ -247,11 +247,12 @@ body {
     text-align: center;
     align-items: center;
     height: fit-content;
+    gap: 1.5rem;
   }
 
   .demo-item-2 {
     align-self: center;
-    max-width: 350px;
+    max-width: fit-content;
     right: 0;
   }
 
@@ -272,6 +273,15 @@ body {
 
   .header-container {
     justify-content: space-between;
+  }
+
+  .header-item {
+    height: 3.5rem;
+    width: 9rem;
+  }
+
+  .header-item:first-child {
+    margin-right: 0px;
   }
 }
 
